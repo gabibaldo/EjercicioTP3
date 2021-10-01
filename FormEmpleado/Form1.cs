@@ -32,7 +32,15 @@ namespace FormAlumno
                 txtLegajo.Clear();
                 txtCarrera.Clear();
                 txtAñoinsc.Clear();
-                lblDatos.Text = "Usted ha ingresado: " + (alumnos.Count) + " datos";
+                if(alumnos.Count == 1)
+                {
+                    lblDatos.Text = "Usted ha ingresado: " + (alumnos.Count) + " Alumno.";
+                }
+                else
+                {
+                    lblDatos.Text = "Usted ha ingresado: " + (alumnos.Count) + " Alumnos.";
+                }
+                
             }
             else
             {
